@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">ايسكا</string>
+
+    <string name="hint_activation_code">Activation Code</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">تسجيل حساب</string>
+    <string name="btn_lofing">تسجيل الدخول</string>
+
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="title_activity_location">Map</string>
+    <string name="map_key" translatable="false">
+            AIzaSyAShH8d9HlFj7ZAlNzSzNJSAC4gexF4FRs
+    </string>
+    <string name="title_activity_maps">Map</string>
+    <!--  ADDRESS  -->
+    <string name="AddressInformations">معلومات العنوان</string>
+
+    <string name="city">المدينة</string>
+    <string name="area">المنطقة</string>
+    <string name="district">الحي </string>
+    <string name="neighborhood">الشارع</string>
+    <string name="housenumber">رقم البناء</string>
+    <string name="buildingnumber">رقم البيت</string>
+    <string name="fullAddress">العنوان الكامل</string>
+    <string name="phoneNumber1">رقم الهاتف</string>
+
+    <!-- -->
+    <!--  CONTACTS -->
+    <string name="UserInformations">معلومات المستخدم</string>
+    <string name="name">الإسم</string>
+    <string name="email">إيميل</string>
+    <string name="phoneNumber2">أضف رقم هاتف ثاني</string>
+    <string name="password">كلمة السر</string>
+
+    <!--        -->
+    <string name="inputsError">الرجاء تعبئة كل الحقول</string>
+    <string name="add">  إضافة عنوان جديد </string>
+    <string name="delete">حذف</string>
+    <string name="update">تعديل</string>
+    <string name="save">حفظ</string>
+
+
+    <string name="Location">العنوان</string>
+    <string name="PersonlInformation">معلوماتي</string>
+
+    <string name="itemCountsBasket">منتج في السلة</string>
+    <string name="itemCountsWishlist">منتج في المفضلة</string>
+
+    <string name="wishListEmpty"> المفضلة فارغة</string>
+    <string name="basketEmpty">السلة فارغة</string>
+
+    <string name="btnKeepShopping">إكمال التسوق</string>
+
+    <string name="discounted">تخفيضات</string>
+    <string name="viewAll">عرض الكل</string>
+    <string name="mostSoldProducts">المنتجات الأكثر مبيعا </string>
+    <string name="newProduts">منتجات جديدة </string>
+    <string name="categories">الاقسام </string>
+    <string name="smilarproducts">منتجات مشابهة</string>
+
+    <string name="addedToBasket">إضافة إلى السلة</string>
+    <string name="addedToWishList">إضافة إلى المفضلة</string>
+
+    <string name="home">الرئيسية</string>
+    <string name="basket">السلة</string>
+    <string name="wishList">المفضلة</string>
+    <string name="account">حسابي</string>
+
+    <string name="total">المجموع</string>
+    <string name="completeBuyting">إكمال الشراء</string>
+    <string name="products">منتجات</string>
+    <string name="withoutregister">المتابعة بدون تسجيل حساب</string>
+    <string name="phoneempty">الرجاء إدخال رقم الهاتف</string>
+    <string name="checknumber">تأكد</string>
+    <string name="resendcode">إرسال الكود مجددا</string>
+    <string name="codeerror">الكود الذي أدخلته غير صحيح , الرجاء المحاولة مجددا </string>
+    <string name="tvMessage">ارسلنا لك رسالة تحوي كود التحقق على الرقم </string>
+    <string name="backToRegister">العودة إلى تسجيل حساب </string>
+    <string name="numbererror">خطأ في الرقم ؟ هل تريد إدخال الرقم مجددا ؟ </string>
+    <string name="haveaccount">هل لديك حساب بالفعل ؟ الذهاب لصفحة تسجيل الدخول</string>
+    <string name="forgetpassword">هل نسيت كلمة السر؟ إعادة الضبط</string>
+
+
+    <string name="welcome">مرحباً</string>
+
+
+    <string name="welcome1"> الرجال إدخال رقم الهاتف من أجل التسجيل في التطبيق </string>
+
+
+</resources>

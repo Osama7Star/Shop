@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "177974862183",
+    "firebase_url": "https://ecommerce-e6859.firebaseio.com",
+    "project_id": "ecommerce-e6859",
+    "storage_bucket": "ecommerce-e6859.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:177974862183:android:41cac2f67aeb6a20294fc2",
+        "android_client_info": {
+          "package_name": "com.alnajim.osama.ecommerce2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "177974862183-6hfcijuft0jo3egb6os9gslabmkti3sn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQny_Cz9e4urloUpdYUh_7JqASM6q8cdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "177974862183-6hfcijuft0jo3egb6os9gslabmkti3sn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

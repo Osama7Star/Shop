@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/mymymymmy"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product"
+    android:focusable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusedByDefault="true">
+
+    <!--  CHECK IF THERE ARE NO INTERNET  -->
+
+   <RelativeLayout
+       android:id="@+id/rlCheckInternt"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:visibility="visible">
+       <ProgressBar
+           android:id="@+id/progressbar"
+           android:layout_width="100dp"
+           android:layout_height="50dp"
+           android:layout_centerInParent="true">
+
+       </ProgressBar>
+   </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+    android:id="@+id/rlProducts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/test"
+        android:layout_marginBottom="5dp">
+     <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/itemDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="400dp" />
+            <TextView
+                android:id="@+id/txtDiscountRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_alignParentEnd="true"
+                android:visibility="visible"
+                android:background="@color/green1"
+                android:textColor="@color/white"
+                android:paddingStart="3dp"
+                android:paddingEnd="3dp"
+                />
+
+            <ImageView
+                style="?android:attr/buttonBarButtonStyle"
+                android:id="@+id/imgBtnAddtoWishList"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Grocery"
+                android:src="@drawable/love"
+                android:onClick="AddToWishList"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:weightSum="4">
+
+
+    <TextView
+        android:id="@+id/tvProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_weight="1"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/green1"/>
+    <RelativeLayout
+        android:id="@+id/rerlativeLayoutOldprice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtOldrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <View
+            android:id="@+id/viewOldPriceStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@id/txtOldrice"
+            android:layout_alignEnd="@id/txtOldrice"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+        <TextView
+            android:id="@+id/tvProductDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/input_register"
+            android:textAlignment="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical|end"
+            />
+    <TextView
+        android:id="@+id/tvProductSmallDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        />
+
+        <LinearLayout
+            android:id="@+id/llAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="1dp">
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+<!--    __________________________________________   -->
+
+
+
+
+         <LinearLayout
+             android:id="@+id/llSimilarProducts"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_margin="20dp"
+                android:background="@android:color/darker_gray" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="30dp">
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="@string/smilarproducts"
+                  android:textAlignment="center"
+                  android:layout_marginStart="5dp"
+                  android:layout_marginBottom="10dp"
+                  android:textStyle="bold"
+                  android:textSize="20sp"/>
+              <androidx.recyclerview.widget.RecyclerView
+                  android:id="@+id/rvSimilaritem"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+          </LinearLayout>
+         </LinearLayout>
+
+
+<!--_____________________________________________-->
+        </LinearLayout>
+
+    </ScrollView>
+
+      <LinearLayout
+          android:id="@+id/test"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_alignParentBottom="true">
+          <ImageButton
+              style="?android:attr/buttonBarButtonStyle"
+              android:id="@+id/imgBtnAddtoBasket"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:src="@drawable/basketyellow"
+              android:background="@color/green1"
+              android:onClick="AddToBasket"
+              android:layout_marginStart="3dp"
+              android:layout_marginEnd="3dp"
+               />
+
+          <include
+              android:layout_width="match_parent"
+              android:layout_height="56dp"
+              layout="@layout/tab"
+              android:id="@+id/bottombar" />
+      </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

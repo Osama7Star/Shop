@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Esca</string>
+
+    <string name="hint_activation_code">Activation Code</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_lofing">Log In</string>
+
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="btn_logout">LOGOUT</string>
+
+    <string name="title_activity_location">Map</string>
+    <string name="map_key" translatable="false">
+            AIzaSyAShH8d9HlFj7ZAlNzSzNJSAC4gexF4FRs
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+<!--  ADDRESS  -->
+    <string name="AddressInformations">Address Informations</string>
+    <string name="city">City</string>
+    <string name="area">Area</string>
+    <string name="district">District</string>
+    <string name="neighborhood">Neighborhood</string>
+    <string name="housenumber">House Number</string>
+    <string name="buildingnumber">Building Number</string>
+    <string name="fullAddress">Full Address</string>
+
+<!-- -->
+<!--  CONTACTS -->
+    <string name="UserInformations">User Informations</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="phoneNumber1">Phone Number</string>
+
+    <string name="phoneNumber2">Add Another Phone Number</string>
+    <string name="password">password</string>
+
+    <!--        -->
+    <string name="inputsError">Please fill in all fields</string>
+    <string name="add">Add New Address</string>
+    <string name="delete">New</string>
+    <string name="update">Update</string>
+    <string name="save">Save</string>
+
+    <string name="Location">Address</string>
+    <string name="PersonlInformation">Personal Informations</string>
+
+    <string name="itemCountsBasket">Products in Your Basket</string>
+    <string name="itemCountsWishlist">Products in Your Wishlist</string>
+
+    <string name="wishListEmpty">Your WishList is Empty</string>
+    <string name="basketEmpty">Your Basket is Empty</string>
+
+    <string name="btnKeepShopping">Keep Shopping</string>
+
+    <string name="viewAll">View All</string>
+
+    <string name="discounted">discounted</string>
+
+    <string name="mostSoldProducts">Most Sold Products</string>
+    <string name="newProduts">New Prodcuts </string>
+
+    <string name="categories">categories </string>
+    <string name="smilarproducts">Similar Products</string>
+
+    <string name="addedToBasket">Added To Basket</string>
+    <string name="addedToWishList">Added To WishList</string>
+
+    <string name="home">Home</string>
+    <string name="basket">Basket</string>
+    <string name="wishList">WishList</string>
+    <string name="account">Account</string>
+    <string name="products">Products</string>
+
+
+
+    <string name="total">Total</string>
+    <string name="completeBuyting">Complete Buying</string>
+    <string name="withoutregister">Continue Without Register</string>
+    <string name="phoneempty">Please Enter a Phone Number</string>
+    <string name="checknumber">Check Code</string>
+    <string name="resendcode">Resend Code</string>
+    <string name="codeerror">Activation Code Not True , Please Try Again </string>
+    <string name="tvMessage">Your Receive SMS Code Which We Sent On Your Phone Number </string>
+    <string name="numbererror">Error In Number ? Enter the Number Again </string>
+    <string name="backToRegister">Back To Register</string>
+    <string name="haveaccount">Already Have Account ? Go To Login</string>
+    <string name="forgetpassword">Forget Your Password ? Reset It</string>
+
+    <string name="welcome">Welcome
+       </string>
+
+
+    <string name="welcome1"> Please Enter Your Phone Number To register To The App </string>
+
+
+
+
+</resources>

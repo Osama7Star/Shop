@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddUserAddress"
+    android:orientation="vertical">
+
+    <!--  TOOLBAR ANDROID  -->
+    <include layout="@layout/toolbar" android:id="@+id/asdasd" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/addressInfo"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:id="@+id/tvHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddressInformations"
+                    android:background="@color/bg_main"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="@color/white"/>
+                <LinearLayout
+                    android:id="@+id/city"
+                    android:layout_below="@+id/llEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="City"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="18sp"/>-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/etCity"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="City "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:hintAnimationEnabled="true"
+                        app:counterOverflowTextAppearance="@style/ErrorText"
+                        app:counterTextAppearance="@style/CounterText"
+                        app:hintTextAppearance="@style/HintText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/city"
+                            android:textColor="@color/input_register"
+
+                            android:paddingBottom="15dp"                            android:textColorHint="@color/input_register_hint"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/area"
+                    android:layout_below="@+id/llEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="Area"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="18sp"/>-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/etArea"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="Area "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    app:hintAnimationEnabled="true"
+                    app:hintTextAppearance="@style/HintText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/etArea"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/area"
+                        android:textColor="@color/input_register"
+
+                        android:paddingBottom="15dp"
+                        android:textColorHint="@color/input_register_hint"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/neighbourhood"
+                    android:layout_below="@+id/llEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="neighbourhood"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="18sp"/>-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/etneighbourhood"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="neighbourhood "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:counterOverflowTextAppearance="@style/ErrorText"
+                        app:hintTextAppearance="@style/HintText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etDiscrit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/district"
+                            android:textColor="@color/input_register"
+
+                            android:paddingBottom="15dp"
+                            android:textColorHint="@color/input_register_hint"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/street1"
+                    android:layout_below="@+id/neighbourhood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+<!--                    <TextView-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:text="street"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="18sp"/>-->
+<!--                    <EditText-->
+<!--                        android:id="@+id/etStreet"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="street "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:hintTextAppearance="@style/HintText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etneighbourhood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/neighborhood"
+                            android:textColor="@color/input_register"
+
+                            android:paddingBottom="15dp"                            android:textColorHint="@color/input_register_hint"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/street"
+                    android:layout_below="@+id/llEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/stBuildingNumber"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="build number "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:layout_marginEnd="3dp"-->
+<!--                        />-->
+
+
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/etHouseNumber"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="2"-->
+<!--                        android:hint="House Number "-->
+<!--                        android:textSize="19sp"-->
+<!--                        android:background="@drawable/stroke"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        app:hintTextAppearance="@style/HintText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etBuildingNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/buildingnumber"
+                            android:textColor="@color/input_register"
+
+                            android:paddingBottom="15dp"
+                            android:layout_margin="5dp"
+                            android:textColorHint="@color/input_register_hint"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        app:hintTextAppearance="@style/HintText">
+
+                        <com.google.android.material.textfield.TextInputEditText
+
+                            android:id="@+id/etHouseNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/housenumber"
+                            android:textColor="@color/input_register"
+
+                            android:paddingBottom="15dp"                            android:textColorHint="@color/input_register_hint"
+                            />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    app:hintTextAppearance="@style/HintText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+
+                        android:id="@+id/etFullAdress"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:hint="@string/fullAddress"
+                        android:textColor="@color/input_register"
+                        android:paddingBottom="15dp"                            android:textColorHint="@color/input_register_hint" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:layout_below="@+id/llphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:background="@color/bg_main"
+                    android:layout_gravity="center"
+                    android:onClick="SendAddressInfo"/>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

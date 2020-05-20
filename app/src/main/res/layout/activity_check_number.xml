@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_register"
+    android:orientation="vertical"
+    android:padding="10dp">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="50dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_gravity="center">
+      <TextView
+          android:id="@+id/tvMessage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white"
+          android:textAlignment="center"
+          android:textSize="15sp"/>
+      <TextView
+          android:id="@+id/tvphoneNumber"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="10dp"
+          android:textColor="@color/green1"
+          android:textAlignment="center"
+          android:textStyle="bold"
+          android:textSize="18sp"/>
+  </LinearLayout>
+
+        <EditText
+            android:id="@+id/tvActivationCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:hint="@string/hint_activation_code"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_register"
+            android:inputType="phone"
+            android:digits="0123456789+"
+            android:textColorHint="@color/input_register_hint" />
+
+
+        <TextView
+            android:id="@+id/tvCountDown"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/input_register_bg"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/input_register"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:onClick="ResendCode"
+            android:text="Resend The Code "
+
+            android:visibility="gone"/>
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/green1"
+            android:text="@string/checknumber"
+            android:onClick="Send"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:id="@+id/btnResendCode"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/md_black_1000"
+            android:textColor="@color/white"
+            android:onClick="ResendCode"
+            android:text="@string/resendcode"
+            android:visibility="gone"
+            />
+
+
+
+        <!-- Link to Login Screen -->
+
+        <TextView
+            android:id="@+id/backToRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:onClick="backToRegister" />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>
